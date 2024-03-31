@@ -6,6 +6,8 @@
 
 # To run specific test: 
 ```npx wdio run ./wdio.conf.js  --spec ./test/specs/googlesearch.spec.js```
+# To run all test 
+``` npx wdio run wdio.conf.js ``` 
 
 # Compile and create Allure report: 
 - https://webdriver.io/docs/allure-reporter/
@@ -21,4 +23,3 @@
 4. allure generate ./allure-results/
 
 5. allure open```
-
