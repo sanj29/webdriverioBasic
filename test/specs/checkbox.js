@@ -2,8 +2,26 @@ import { expect } from "chai"
 
 describe("Test for Radio Buttons", async()=> {
 
-    it('Test for is Selected ', async() =>{
+    //this.retries(2);
 
+    before(function () {
+        console.log('runs once before the first test in this block')
+      });
+    
+      after(function () {
+        console.log(' runs once after the last test in this block')
+      });
+    
+      beforeEach(function () {
+        console.log(' runs before each test in this block')
+      });
+    
+      afterEach(function () {
+        console.log('runs after each test in this block')
+      });
+
+      it('Test for is Selected ', async() =>{
+       // this.retries(2); 
         await browser.url('https://materializecss.com/radio-buttons.html')
         await browser.maximizeWindow()
 
